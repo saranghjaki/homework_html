@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="uTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>youngsoo</title> 
+	</head>
+	
+	<body>
+	
+		<form action="./formresult.html" method="get">
+			<input type="radio" id="name" name="name">	
+			<input type="checkbox" id="id" name="id">	
+			<input type="password" id="ssn" name="ssn">
+			<input type="button" value="제출">
+		
+		</form>	
+
+		<form action="./formresult.html" method="post">
+			<input type="text" id="name" name="name">	
+			<input type="text" id="id" name="id">	
+			<input type="text" id="ssn" name="ssn">
+			<input type="submit" value="제출">
+		</form>
+
+		<form action="">
+			<input type="text" id="name" name="name" autocomplete="off">	
+			<input type="text" id="id" name="id">	
+			<input type="text" id="ssn" name="ssn">
+			<input type="submit" value="제출">
+		</form>
+		
+		<form action="">
+			<input type="text" autocomplete="on">
+			<input type="submit" value="제출">
+		</form>
+			                                   		
+		<form action="./formresult.html" method="get" id="form" name="form">
+			<input type="text" id="nickname" name="nickname">
+			<input type="button" id="button" name="button" value="제출" onclick="here();">
+		</form>
+
+		<script type="text/javascript"> 
+		
+			function here() {
+				alert("nickname: "+ document.getElementById("nickname").value);
+				 document.getElementById("form").submit();
+				
+			}
+			
+		</script>					
+					
+					
+
+</body>	
+</html>
+
+
