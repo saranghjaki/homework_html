@@ -7,24 +7,56 @@
 	</head>
 	
 		<body>
-			<form action="" method="post" id="form" name="" enctype="multipart/form-data"></form>
+			<form action="" method="get" id="form" name="" enctype="multipart/form-data"></form>
 				아이디 : <input type= "text" id ="id1" name="id1">
 				<br>아이디 : <input type= "text" id ="" name="" size="100">
-				<br>아이디 : <input type= "text" id ="" name="" maxlenght="20">
+				<br>아이디 : <input type= "text" id ="" name="" maxlength="20">
 				<br>아이디 : <input type= "text" id ="" name="" placeholder="아이디">
 				<br>아이디 : <input type= "text" id ="" name="" value="asddsa">
 				<br>아이디 : <input type= "text" id ="" name="" size="50" autofocus="autofocus">
-				<br>아이디 : <input type= "text" id ="" name="" value="asddsa">
-				
+		
+		
 				<br><input type="button" id="button" name="button" value="제출" onclick=here();>
+		
+				<br>아이디 : <input type= "text" id ="" name="" size="50" autofocus="autofocus" readonly>
+				<!-- 읽기만가능 -->
+				<br>아이디 : <input type= "text" id ="" name="" size="50" autofocus="autofocus" disabled>
+			<!-- 	비활성화  -->
+				<hr>
+				
+			 	<select disabled>
+			 		<option>1
+			 		<option>2
+			 		<option selected>3
+			 	</select>
+			
+			 	<select readonly> <!-- 적용안됨 -->
+			 		<option>1
+			 		<option>2
+			 		<option selected>3
+			 	</select>
+			<hr>
+				<br>아이디 : <input type= "text" id ="" name="" value="asddsa">
+				<br> <textarea cols="10" rows="10" placeholder="아이디"></textarea>
+				<br> <textarea cols="10" rows="10" maxlength="20"></textarea>
+				<br><input type="button" id="button" name="button" value="제출" onclick=here();>
+				
+				<hr>
+					 <hr>
+			
+				<br>여기서부터 <input type= "hidden" id ="" name="" size="50" autofocus="autofocus">
+				여기까지
+				<br><input type="submit" name="submit">
 			</form>
 			
+			
+			<!-- 
 			<script type="text/javascript">
 			function here() {
 				alert("id1: " + document.getElemenrById("id1").value);
 				document.getElemenrById("form").submit();
 			}
 			</script>
-
+ -->
 </body>
 </html>
