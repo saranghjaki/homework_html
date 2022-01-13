@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="uTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>youngsoo</title> 
+	</head>
+
+		<body onload="init();"> <!-- 지시자명은 자유 단 지시자는불가 -->
+			
+			
+		<!-- 	<video src="./004.mp4"></video> -->
+			<video src="./004.mp4" width="300;"></video> <!-- 사이즈조절 -->
+			<video src="./004.mp4" controls  width="300;"></video>
+			<video src="./004.mp4" controls  width="300;" loop></video> <!-- 무한반복 -->
+			<video src="./004.mp4" controls  width="300;" autoplay muted></video>
+			<!-- 정책으로 auto 자동재생은 안되나muted묵음 과 함께 하면 소리없이 자동재생됨 -->
+			
+			<video controls  width="300;" autoplay>
+				<source src="./004.mp4">
+				<source src="./004.wedm">
+				<source src="./004.egg">
+				
+				<!-- 3가지 확장자명 음원이 있어야함 
+				순차적으로 재생
+				본 영상은 크롬에 또는 html5를 지원하는 브라우저만 가능합니다 -->
+			</video>
+			<!-- 자막넣는것도 가능하다 실습해봐라 -->
+		<script type="text/javascript">
+			function init(){   /* 이거는기본그냥외울걸 */
+			/* 	alert("나는멋쟁이"); */
+				
+			}
+			
+		/* 	https://videojs.com/ 비디오 자바스크립트 관련사이트 */
+		</script>
+				
+	</body>	
+</html>
